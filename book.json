@@ -1,0 +1,11 @@
+{
+  "plugins": ["ga", "-sharing"],
+  "pluginsConfig": {
+      "ga": {
+          "token": "UA-12341234-1"
+      }
+  },
+  "variables": {
+      "BASE_URL": "https://kiephpark.github.io"
+  }
+}
