@@ -1,0 +1,438 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>High Order Component · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [자바스크립트 정리]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="2019-08-04-JS-Reg.html">
+            
+                <a href="2019-08-04-JS-Reg.html">
+            
+                    
+                    정규식 22고개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2019-08-04-JS-Array.html">
+            
+                <a href="2019-08-04-JS-Array.html">
+            
+                    
+                    배열
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [React.js 정리]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="2019-08-04-React-HOC.html">
+            
+                <a href="2019-08-04-React-HOC.html">
+            
+                    
+                    High Order Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    [React Hooks 정리]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="2019-08-04-React-Hooks-1.html">
+            
+                <a href="2019-08-04-React-Hooks-1.html">
+            
+                    
+                    useState, useCallback, useEffect, useRef
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    [Next.js 정리]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="2019-08-04-Next-install-eslint.html">
+            
+                <a href="2019-08-04-Next-install-eslint.html">
+            
+                    
+                    설치 및 eslint 설정
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2019-08-04-Next-routing-link.html">
+            
+                <a href="2019-08-04-Next-routing-link.html">
+            
+                    
+                    라우팅, Link
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >High Order Component</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="higher-order-componenthoc&#xB780;">Higher Order Component(HOC)&#xB780;</h2>
+<p>&#xB9AC;&#xC561;&#xD2B8; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xC778;&#xC790;&#xB85C; &#xBC1B;&#xC544; &#xC0C8;&#xB85C;&#xC6B4; &#xB9AC;&#xC561;&#xD2B8; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xB9AC;&#xD134;&#xD558;&#xB294; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xB9D0;&#xD558;&#xB294;&#xB370;, &#xC774;&#xB294; &#xCF54;&#xB4DC;&#xC758; &#xC7AC;&#xC0AC;&#xC6A9;&#xC131;&#xC744; &#xB192;&#xC774;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;. &#xC77C;&#xC885;&#xC758; decorator&#xCC98;&#xB7FC; &#xBCF4;&#xC778;&#xB2E4;.</p>
+<h2 id="&#xC0AC;&#xC6A9;-&#xC608;">&#xC0AC;&#xC6A9; &#xC608;</h2>
+<ul>
+<li>containter&#xC640; presentation &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC758; &#xBD84;&#xB9AC;</li>
+<li>&#xB85C;&#xB529;&#xC911; &#xD654;&#xBA74;</li>
+<li>&#xC720;&#xC800; &#xC778;&#xC99D; &#xB85C;&#xC9C1;</li>
+<li>&#xC5D0;&#xB7EC; &#xBA54;&#xC2DC;&#xC9C0;</li>
+</ul>
+<h2 id="&#xACE0;&#xB824;-&#xC0AC;&#xD56D;">&#xACE0;&#xB824; &#xC0AC;&#xD56D;</h2>
+<ul>
+<li>&#xB124;&#xC774;&#xBC0D;&#xC740; with<code>&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xC5EC;</code>withNewPropName` &#xC2DD;&#xC73C;&#xB85C; &#xB124;&#xC774;&#xBC0D;&#xD558;&#xB294;&#xAC8C; &#xC88B;&#xB2E4;. &#xC608;&#xB97C;&#xB4E4;&#xBA74;, withLoading, withAuth &#xB4F1;&#xC73C;&#xB85C; &#xC8FC;&#xC785; &#xB420; prop &#xBA85;&#xC744; &#xC801;&#xC5B4;&#xC8FC;&#xB294; &#xC2DD;&#xC73C;&#xB85C; &#xB9D0;&#xC774;&#xB2E4;. &#xC774;&#xB807;&#xAC8C;&#xD558;&#xBA74; &#xC2E4;&#xC81C;&#xB85C; HOC&#xAC00; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0;&#xC11C; prop&#xC744; &#xD655;&#xC778; &#xD560; &#xB54C;, &#xC774; prop&#xC774; &#xC5B4;&#xB514;&#xC5D0;&#xC11C; &#xC654;&#xB294;&#xC9C0; &#xBA85;&#xD655;&#xD788; &#xC54C; &#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC774;&#xB2E4;.</li>
+<li>render &#xBA54;&#xC18C;&#xB4DC;&#xC5D0; HOC&#xB97C; &#xC0AC;&#xC6A9; &#xD558;&#xAC8C; &#xB418;&#xBA74; &#xB9E4;&#xBC88; render &#xBA54;&#xC18C;&#xB4DC;&#xAC00; &#xC2E4;&#xD589; &#xB420; &#xB54C;&#xB9C8;&#xB2E4; &#xC544;&#xB798;&#xCC98;&#xB7FC; EnhancedComponent&#xAC00; &#xC0C8;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C0;&#xAC8C; &#xB41C;&#xB2E4;. &#xADF8;&#xB807;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; HOC&#xB294; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC678;&#xBD80;&#xC5D0; &#xC120;&#xC5B8; &#xB418;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;.</li>
+</ul>
+<h2 id="&#xC0AC;&#xC6A9;&#xBC29;&#xBC95;">&#xC0AC;&#xC6A9;&#xBC29;&#xBC95;</h2>
+<ul>
+<li>&#xC778;&#xC790;&#xAC00; &#xC5C6;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xD615; HOC
+```
+const withHOC = WrappedComponent =&gt; {
+const newProps = {
+  loading: false,
+};
+return class extends React.Component {
+  render() {<pre><code>return &lt;WrappedComponent {...this.props} {...newProps} /&gt;
+</code></pre>  }
+}
+};</li>
+</ul>
+<p>export default withHOC;</p>
+<pre><code>* &#xC778;&#xC790;&#xAC00; &#xC5C6;&#xB294; &#xD568;&#xC218;&#xD615; HOC
+</code></pre><p>const withHOC = WrappedComponent =&gt; {
+  const newProps = {
+    loading: false,
+  };
+  return props =&gt; {
+    return <wrappedcomponent {...props}="" {...newprops}="">
+  }
+};</wrappedcomponent></p>
+<p>export default withHOC;</p>
+<pre><code>
+* props&#xAC00; &#xC788;&#xB294; &#xD568;&#xC218;&#xD615; HOC (loading&#xC774; &#xD544;&#xC694;&#xD55C; )
+</code></pre><p>const withLoading = (WrappedComponent) =&gt; (props) =&gt;
+  props.isLoading
+    ? <div>Loading ...</div>
+    : <wrappedcomponent {="" ...props="" }=""></wrappedcomponent></p>
+<p>export default withLoading;</p>
+<pre><code>
+* option&#xACFC; prop&#xAC00; &#xC788;&#xB294; &#xD568;&#xC218;&#xD615; HOC
+</code></pre><p>const withLoading = options =&gt; WrappedComponent =&gt; props =&gt; {
+  if (props.isLoading) {
+    if (options.type === &apos;circle&apos;) {
+      return <circularloading>
+    }
+    return <linearloading>
+  }
+  return <wrappedcomponent {...props}="">
+};</wrappedcomponent></linearloading></circularloading></p>
+<p>export default withLoading;</p>
+<p>import withLoading from &apos;./withLoading&apos;;
+const LoadingTodoList = withLoading({ type: &apos;circle&apos; })(TodoList);
+```</p>
+<h2 id="&#xCC38;&#xC870;">&#xCC38;&#xC870;</h2>
+<ul>
+<li><a href="https://www.vobour.com/%EB%A6%AC%EC%95%A1%ED%8A%B8-react-%EC%9D%B4%ED%95%B4-4-higher-order-component" target="_blank">https://www.vobour.com/%EB%A6%AC%EC%95%A1%ED%8A%B8-react-%EC%9D%B4%ED%95%B4-4-higher-order-component</a></li>
+<li><a href="https://www.vobour.com/%EC%83%81%EC%84%B8%ED%95%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-higher-order-components-%EC%84%A4%EB%AA%85-react" target="_blank">https://www.vobour.com/%EC%83%81%EC%84%B8%ED%95%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-higher-order-components-%EC%84%A4%EB%AA%85-react</a></li>
+<li><a href="https://reactjs.org/docs/higher-order-components.html#convention-wrap-the-display-name-for-easy-debugging" target="_blank">https://reactjs.org/docs/higher-order-components.html#convention-wrap-the-display-name-for-easy-debugging</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"High Order Component","level":"1.3.1","depth":2,"next":{"title":"[React Hooks 정리]","level":"1.4","depth":1,"ref":"","articles":[{"title":"useState, useCallback, useEffect, useRef","level":"1.4.1","depth":2,"path":"posts/2019-08-04-React-Hooks-1.md","ref":"posts/2019-08-04-React-Hooks-1.md","articles":[]}]},"previous":{"title":"[React.js 정리]","level":"1.3","depth":1,"ref":"","articles":[{"title":"High Order Component","level":"1.3.1","depth":2,"path":"posts/2019-08-04-React-HOC.md","ref":"posts/2019-08-04-React-HOC.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"BASE_URL":"https://kiephpark.github.io"},"plugins":["ga","-sharing"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-12341234-1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"posts/2019-08-04-React-HOC.md","mtime":"2019-08-04T16:26:20.606Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-04T16:39:37.371Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
