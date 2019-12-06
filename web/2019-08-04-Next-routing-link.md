@@ -24,7 +24,6 @@ export default Index;
 * Link는 wrapper Componet이름도 herf, as 등의 자체 props를 빼곤 내부 component에 props설정을 해야한다. style이 대표적인 예이다.
 * Link 내의 component는 onClick props를 가지고 있어야 한다.
 * Link는 location.history를 알아서 처리해 주므로 추가적인 코드가 필요 없다.
-* Link는
 
 ```
 import Link from 'next/link';
@@ -36,7 +35,7 @@ const AppLayout = ({ children }) => (
       <Link href="/sginup"><a>회원가입</a></Link>
     </header>
     <section>{children}</section>
-  </div>
+  </>
 )
 ```
 

@@ -17,7 +17,6 @@ npm i -D eslint eslint-plugin-import eslint-plugin-react eslint-plugin-react-hoo
 ```
 express와 함께 서버를 동작시키려면, server.js 생성, package.json 수정, nodemon.json파일을 생성해야 한다.
 
-npm install
 ```
 npm i --save cookie-parser dotenv express express-session morgan
 
@@ -41,7 +40,8 @@ nodemon.json
   "ext": "js json jsx"
 }
 
-```server.js
+```
+server.js
 ```
 const express = require('express');
 const next = require('next');
