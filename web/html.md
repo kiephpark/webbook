@@ -299,3 +299,9 @@ feature-meal자식에 대해서 flex를 적용하고,
   color: rgba(0, 0, 0, 0.6);
 }
 ```
+
+### CSS Layout position property
+1. position property는 element의 위치를 어떻게 처리할 때에 대한 타입을 정할 수 있다.
+2. static, relative, fixed, absolute, sticy등이 있다.
+4. fixed는 viewport기준으로 위치를 표시한다. 화면의 절대적인 위치를 정할 수 있다.
+5. absolute는 positioned ancestor기준으로 상대 위치를 정할 수 있다. 그래서 ancestor position을 relative로 하고, 자식 element의 위치를 absolute로 정할 수 있다.
