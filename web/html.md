@@ -21,8 +21,14 @@ https://docs.emmet.io/abbreviations/syntax/
 5. (dd)(Alt) + Shift + 화살표(up/down) : 하나의 라인이나 여러 라인을 아래에 복사하고 싶을 때
 6. cmd(Ctrl) + B : 옆창 열기/닫기
 
-### css flex
+### CSS Layout position property
+1. position property는 element의 위치를 어떻게 처리할 때에 대한 타입을 정할 수 있으며, flex나 grid의 영향을 받지 않는다.
+2. static, relative, fixed, absolute, sticy등이 있다.
+4. fixed는 viewport기준으로 위치를 표시한다. 화면의 절대적인 위치를 정할 수 있다.
+5. relative는 부모 태그 기준으로 위치를 정하고 싶을 때 사용하며, top, left, right, bottom으로 위치 조정을 할 수 있다. layout이 겹치는 경우 나중에 나오는 태그가 위로 가는 데, z-index로 오버레이하는 순서를 조정할 수 있다.
+5. absolute는 positioned ancestor기준으로 상대 위치를 정할 수 있다. 그래서 ancestor position을 relative로 하고, 자식 element의 위치를 absolute로 정할 수 있다.
 
+### css flex
 1. flex는 flex-container와 flex-items으로 구성된다. flex-items을 어떻게 배치할 지 결정한다.
 2. display:flex;가 설정된 tag가 flex-container이며, 직계 자식에게만 영향을 준다. (tag or value)
 3. flex-container properties: flex-direction, flex-wrap, justify-contents, align-items이 있다.
@@ -82,7 +88,8 @@ li:not(.target){
 
 }
 
-```3. css variables
+```
+3. css variables
 ```
 :root{
   --awesomeColor:red;
@@ -300,8 +307,197 @@ feature-meal자식에 대해서 flex를 적용하고,
 }
 ```
 
-### CSS Layout position property
-1. position property는 element의 위치를 어떻게 처리할 때에 대한 타입을 정할 수 있다.
-2. static, relative, fixed, absolute, sticy등이 있다.
-4. fixed는 viewport기준으로 위치를 표시한다. 화면의 절대적인 위치를 정할 수 있다.
-5. absolute는 positioned ancestor기준으로 상대 위치를 정할 수 있다. 그래서 ancestor position을 relative로 하고, 자식 element의 위치를 absolute로 정할 수 있다.
+### overlay 이미지 꾸미기
+![완성본](images/overlay_box.png)
+- main
+-- recipe
+--- recipe-heart
+--- recipe-info
+---- recipe-info-meta
+---- recipe-info-title
+---- recipe-info-social
+
+
+.main {
+  margin: 50px 0;
+  margin-bottom: 100px;
+}
+
+.recipe {
+  height: 40vh;
+  border-radius: var(--borderRadius);
+  background-image: url(https://i.pinimg.com/564x/ae/c7/e2/aec7e2860fa4b5438826abd82830825d.jpg);
+  background-size: 100%;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.recipe .recipe__heart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe__heart svg {
+  width: 20px;
+  fill: #e74c3c;
+}
+
+.recipe .recipe__info {
+  background-color: white;
+  border-radius: var(--borderRadius);
+  width: 90%;
+  padding: 10px 25px;
+  box-shadow: 0 7px 20px rgba(50, 50, 93, 0.1), 0 3px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  top: 50px;
+}
+
+.recipe__info .recipe__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.recipe__info .recipe__meta {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--greyColor);
+}
+
+
+.recipe__meta {
+  color: var(--greyColor);
+  font-weight: 600;
+}
+
+.recipe__info .recipe__social {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.recipe__social .recipe__social-item {
+  display: flex;
+  align-items: center;
+}
+
+.recipe__social-item svg {
+  margin-left: 10px;
+  fill: var(--greyColorx);
+}
+
+### 전체 영역을 기준으로 button이나 back ground 만들기
+.follow_button {
+  background-image: var(--gradientBackground);
+  color: white;
+  box-shadow: var(--boxShadow);
+  text-transform: uppercase;
+  padding: 30px 60px;
+  border: none;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+}
+
+.fakeBg {
+  position: fixed;
+  height: 100vh;
+  background-color: white;
+  top: 0px;
+  right: 0;
+  left: 0;
+  width: 80vw;
+  margin: auto;
+  z-index: -1;
+}
+
+### 리스트 만들기
+![List Image](images/list.png)
+- main
+-- list header
+--- title
+--- check image
+-- list
+--- list item
+---- item img
+---- item info
+----- name
+----- friends
+---- item check img
+.main {
+  padding: 0px 20px;
+}
+
+.main .main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 25px;
+  border-bottom: 0.5px solid var(--greyColor);
+  margin-bottom: 50px;
+}
+
+.main__header .main__list-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.main__header .main__list-subtitle {
+  margin-left: 30px;
+  color: var(--greyColor);
+  text-transform: uppercase;
+}
+
+.main__header svg,
+.match-item svg {
+  fill: var(--greyColor);
+}
+
+.main .match-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.match-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 20px;
+}
+
+.match-item img {
+  max-width: 60px;
+  box-shadow: var(--boxShadow);
+}
+
+.match-item__info {
+  font-weight: 600;
+}
+
+.match-item__info .match-item__name {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.match-item__info .match-item__friends {
+  text-transform: uppercase;
+  color: var(--greyColor);
+}
+
+.match-item .match-item__icon {
+  align-self: center;
+}
